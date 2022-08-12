@@ -72,7 +72,7 @@ body[sodik-home] {
 
 @media only screen and (max-width: 600px) {
   body[p-sodik="loading"] {
-    font-size: 13px;
+    font-size: 12px;
   }
   
   body[sodik-home] {

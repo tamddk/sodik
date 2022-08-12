@@ -27,8 +27,6 @@ var sodik_home = () => {
   var sbdy = $("body");
   sbdy.attr("sodik-home", "");
   sbdy.append('<div class="terminal"> <span class="dollar"></span> hi, nama ku Sodik <br/> <span class="dollar"></span> biasanya aku dipanggil sodik atau dik <br/> <span class="dollar"></span> aku kuliah jurusan teknik informatika <br/> <span class="dollar"></span> kemampuan ku yaitu front end, back end and clone <br/> <span class="dollar"></span> aku tipe programmer privasi, jadi yaa gini lah ga terkenal dikalangan orang-orang. sedih sihhh :\'( <br/> <span class="dollar"></span> eh iyaaa, aku hanyalah manusia biasa yang tak luput dari kesalahan dan dosa, tapi kebanyakan dosanya sihhh. tapi tenang kak, ini lagi progress hijrah :) <br/> <span class="dollar"></span> soal cinta ga usah ditanya, aku payah dalam hal itu. kalau dalam hal di ranjang ga usah ditanya langsung gas lahh ngaco. <br/> <span class="dollar"></span> kalau ada pertanyaan langsung chat aja kak ke instagram aku <a href="https://www.instagram.com/tamddk/" title="Link Instagram Tubagus Ahmad Sodik">@tamddk</a></div><audio id="audio-sodik" controls autoplay="true" loop="true" style="display:none;" hidden="hidden"> <source src="assets/sodik/v1.1/sound/toni-braxton_unbreak-my-heart.mp3" type="audio/mpeg"></audio>');
-  var myAudio = document.getElementById("audio-sodik");
-  myAudio.css("display", "none");
 	
   $.fn.typewriter = function() {
     this.each(function() {

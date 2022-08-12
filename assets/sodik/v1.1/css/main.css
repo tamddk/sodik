@@ -69,3 +69,9 @@ body[sodik-home] {
   text-decoration: underline;
   color: #f8f8f8;
 }
+
+@media only screen and (max-width: 600px) {
+  [sodik-home] > .terminal {
+    font-size: 15px;
+  }
+}

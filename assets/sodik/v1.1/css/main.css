@@ -11,6 +11,10 @@ body {
   width: 100%;
 }
 
+audio {
+  display: none
+}
+
 body[p-sodik="loading"] {
   background-color: #000;
   color: #411;

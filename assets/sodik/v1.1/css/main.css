@@ -72,15 +72,15 @@ body[sodik-home] {
 
 @media only screen and (max-width: 600px) {
   body[p-sodik="loading"] {
-    font-size: 14px;
+    font-size: 13px;
   }
   body[sodik-home] {
-    font-size: 12px;
+    font-size: 11px;
   }
   [sodik-home] > .terminal {
-    font-size: 12px;
+    font-size: 11px;
   }
   [sodik-home] > a {
-    font: 12px "Monaco", Inconsolata, monospace;
+    font: 11px "Monaco", Inconsolata, monospace;
   }
 }

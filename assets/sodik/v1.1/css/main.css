@@ -71,6 +71,9 @@ body[sodik-home] {
 }
 
 @media only screen and (max-width: 600px) {
+  body[p-sodik="loading"] {
+    font-size: 30px;
+  }
   [sodik-home] > .terminal {
     font-size: 15px;
   }

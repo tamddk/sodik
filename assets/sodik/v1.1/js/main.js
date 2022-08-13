@@ -1,10 +1,13 @@
-// Credit By Sodik 
+// Credit By Sodik (12:00 PM, 8/12/2022)
 // --------------------------------------
 // Instagram @tamddk
 // --------------------------------------
 //
 var cntrol_tload = true;
 var cntrol_fload = false;
+var t0 = 2000;
+var t1 = 5500;
+var t2 = 17500;
 $("body").attr("p-sodik", "loading");
 $("body > div").attr("sodik-content", "");
 var sodik_dlattr = $("[sodik-content]");
@@ -20,13 +23,39 @@ setTimeout(function() {
 	$("script[script-sodik-home]").remove();
 	$("script[script-sodik-loading]").remove();
 	loading_by_szrooel(cntrol_tload);
-  sodik_home();
-}, 11500);
-var sodik_home = () => {
+  sodik_elements();
+  setTimeout(function() {
+    $("[sodik-home] > div.terminal").remove();
+    $("body").removeAttr("sodik-home");
+    $("body").attr("sodik-loading-to-server", "");
+    $("body > script[script-sodik-typewrite]").remove();
+    setTimeout(function() {
+      $("body").removeAttr("sodik-loading-to-server");
+      $("body").attr("sodik-reconnected", "");
+      $("body").attr("sodik-home-page", "");
+      $("body").attr("class", "WKWKWKWK GOKIL SIH");
+      sodik_portfolio();
+    } , t0 + t1);
+  }, t1 + t2);
+}, t1);
+var sodik_elements = () => {
+  var sdiv = "";
+  sdiv += '<div class="terminal">';
+  sdiv += '<span class="dollar"></span> git calling Mas Sodik <br/>';
+  sdiv += '<code class="text-white">Menghubungkan ...</code> <br/>';
+  sdiv += '<code class="text-danger">Terputus ...</code> <br/>';
+  sdiv += '<code class="text-warning">Menghubungkan Kembali ...</code> <br/>';
+  sdiv += '<code class="text-white">Menghubungkan ...</code> <br/>';
+  sdiv += '<div class="text-success"><span class="dollar"></span>  Terhubung...</div> <br/>';
+  sdiv += '</div>';
+
+  sodik_home(sdiv);
+}
+var sodik_home = (sel) => {
   sodik_typewrite();
   var sbdy = $("body");
   sbdy.attr("sodik-home", "");
-  sbdy.append('<div class="terminal"> <span class="dollar"></span> hi, nama ku Sodik <br/> <span class="dollar"></span> biasanya aku dipanggil sodik atau dik <br/> <span class="dollar"></span> aku kuliah jurusan teknik informatika <br/> <span class="dollar"></span> kemampuan ku yaitu front end, back end and clone <br/> <span class="dollar"></span> aku tipe programmer privasi, jadi yaa gini lah ga terkenal dikalangan orang-orang. sedih sihhh :\'( <br/> <span class="dollar"></span> eh iyaaa, aku hanyalah manusia biasa yang tak luput dari kesalahan dan dosa, tapi kebanyakan dosanya sihhh. tapi tenang kak, ini lagi progress hijrah :) <br/> <span class="dollar"></span> soal cinta ga usah ditanya, aku payah dalam hal itu. kalau dalam hal di ranjang ga usah ditanya langsung gas lahh ngaco. <br/> <span class="dollar"></span> kalau ada pertanyaan langsung chat aja kak ke instagram aku <a href="https://www.instagram.com/tamddk/" title="Link Instagram Tubagus Ahmad Sodik">@tamddk</a></div><audio controls autoplay="true" loop="true" hidden="hidden"> <source src="assets/sodik/v1.1/sound/toni-braxton_unbreak-my-heart.mp3" type="audio/mpeg"> </audio>');
+  sbdy.append(sel);
 	
   $.fn.typewriter = function() {
     this.each(function() {
@@ -58,8 +87,25 @@ var sodik_home = () => {
 var sodik_typewrite = () => {
   var ronv = document.createElement("script");
   ronv.src = "assets/sodik/v1.1/js/typewriter-ronv.js";
-  ronv.setAttribute = "script-sodik-typewrite";
+  ronv.setAttribute("script-sodik-typewrite", "");
   document.body.appendChild(ronv);
+}
+var sodik_portfolio = () => {
+  var spf = "";
+  spf += '<section class="jumbotron text-center">';
+  spf += '<div class="container">';
+  spf += '<h1 class="jumbotron-heading">{ui.ux.design.sodik}</h1>';
+  spf += '<p class="lead text-muted">Dibuat oleh mas Sodik</p>';
+  spf += '<div class="text-center">';
+  spf += '<ul>';
+  spf += '<li><a href="https://github.com/tamddk/" target="_blank">/ gitHub</a></li>';
+  spf += '<li>|</li>';
+  spf += '<li><a href="https://instagram.com/tamddk/" target="_blank">// instagram</a></li>';
+  spf += '</ul>';
+  spf += '</div>';
+  spf += '</div>';
+  spf += '</section>';
+  var sbd = $("body").append(spf);
 }
 window.onload = function() {
     document.addEventListener("contextmenu", function(e) {

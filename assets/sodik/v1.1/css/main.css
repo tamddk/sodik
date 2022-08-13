@@ -1,3 +1,10 @@
+/*
+// Credit By Sodik (12:00 PM, 8/12/2022)
+// --------------------------------------
+// Instagram @tamddk
+// --------------------------------------
+//
+*/
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +20,10 @@ body {
 
 audio {
   display: none
+}
+
+dl, ol, ul {
+  list-style: none;
 }
 
 body[p-sodik="loading"] {
@@ -76,7 +87,7 @@ body[sodik-home] {
 
 @media only screen and (max-width: 600px) {
   body[p-sodik="loading"] {
-    font-size: 12px;
+    font-size: 20px;
   }
   
   body[sodik-home] {
@@ -90,4 +101,43 @@ body[sodik-home] {
   [sodik-home] > a {
     font: 11px "Monaco", Inconsolata, monospace;
   }
+}
+
+body[sodik-loading-to-server] {
+  background-color: #000;
+}
+
+body[sodik-loading-to-server] {
+  background: url("../images/loading.gif");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body[sodik-reconnected][sodik-home-page] {
+  font-family: 'Source Code Pro', monospace;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  background-color: #000;
+}
+
+body[sodik-home-page] ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body[sodik-home-page] ul li {
+    margin: 0 20px;
+}
+
+body[sodik-home-page] a {
+  color: rgb(18, 206, 164);
+}
+
+body[sodik-home-page] a:hover {
+  color: rgb(18, 221, 176);
 }

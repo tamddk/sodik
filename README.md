@@ -1,6 +1,1 @@
-Portofolio Sodik
-_________________
-
-Contact Us
-
-@tamddk (IG)
+# Masih Dalam Pengembangan Oleh Mas Sodik

@@ -8,6 +8,7 @@ var cntrol_fload = false;
 var t0 = 2000;
 var t1 = 5500;
 var t2 = 15000;
+var urlPages = window.location.href;
 $("body").attr("p-sodik", "loading");
 $("body > div").attr("sodik-content", "");
 var sodik_dlattr = $("[sodik-content]");
@@ -138,12 +139,13 @@ var sodik_portfolio = () => {
   spf += "</div>";
   spf += "</section>";
   spf +=
-    '<audio controls autoplay loop><source src="assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
+    '<audio controls autoplay loop><source src="' +
+    urlPages +
+    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
   var sbd = $("body").append(spf);
   sodik_audioPlayer();
 };
 sodik_audioPlayer = () => {
-  let urlPages = window.location.href;
   let audioStream = new Audio(urlPages);
   audioStream.volume = 100 / 100;
 };

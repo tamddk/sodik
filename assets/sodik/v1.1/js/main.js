@@ -167,10 +167,7 @@ window.onload = function () {
   }
 };
 
-console.log(
-  "%c CREADIT BY: TUBAGUS AHMAD SODIK",
-  "color: red; font-size:35px;"
-);
+console.log("%c CREDIT BY: TUBAGUS AHMAD SODIK", "color: red; font-size:35px;");
 
 document.onkeydown = function (e) {
   return false;

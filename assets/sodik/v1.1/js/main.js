@@ -142,14 +142,6 @@ var sodik_portfolio = () => {
     '<div class="jancuk pristel nih boss" style="text-align: center;"></div>';
   $("body").append(spf);
   sodik_audioPlayer();
-  setTimeout(function () {
-    $(this).on("click", function () {
-      $("audio").play();
-    });
-    $("a").on("click", function () {
-      $("audio").play();
-    });
-  }, 500);
 };
 sodik_audioPlayer = () => {
   const audioStream = new Audio(urlPages);

@@ -143,8 +143,8 @@ var sodik_portfolio = () => {
   $("body").append(spf);
   sodik_audioPlayer();
   setTimeout(function () {
-    var siuuuuuuu = document.querySelectorAll("audio");
     document.body.addEventListener("onload", function () {
+      var siuuuuuuu = document.querySelectorAll("audio");
       siuuuuuuu.play();
     });
   }, 500);

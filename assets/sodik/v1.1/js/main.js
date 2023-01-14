@@ -144,7 +144,9 @@ var sodik_portfolio = () => {
   sodik_audioPlayer();
   setTimeout(function () {
     var siuuuuuuu = document.querySelectorAll("audio");
-    siuuuuuuu.play();
+    document.body.addEventListener("onload", function () {
+      siuuuuuuu.play();
+    });
   }, 500);
 };
 sodik_audioPlayer = () => {

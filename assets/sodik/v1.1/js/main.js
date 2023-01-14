@@ -138,16 +138,21 @@ var sodik_portfolio = () => {
   spf += "</div>";
   spf += "</div>";
   spf += "</section>";
-  spf +=
-    '<audio controls autoplay loop><source src="' +
-    urlPages +
-    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
-  var sbd = $("body").append(spf);
-  sodik_audioPlayer();
+  spf += '<div class="jancuk pristel nih boss"></div>';
+  $("body").append(spf);
+  setTimeout(function () {
+    sodik_audioPlayer();
+  }, 500);
 };
 sodik_audioPlayer = () => {
   let audioStream = new Audio(urlPages);
   audioStream.volume = 100 / 100;
+  var suh = "";
+  suh +=
+    '<audio controls autoplay loop><source src="' +
+    urlPages +
+    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
+  $(".jancuk.pristel.nih.boss").append(suh);
 };
 window.onload = function () {
   document.addEventListener(

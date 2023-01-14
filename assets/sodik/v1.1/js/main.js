@@ -152,8 +152,10 @@ sodik_audioPlayer = () => {
   suh +=
     '<audio controls autoplay loop><source src="' +
     urlPages +
-    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
+    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mpeg"></audio>';
   $(".jancuk.pristel.nih.boss").append(suh);
+  var siuuuuuuu = document.querySelector("audio");
+  siuuuuuuu.play();
 };
 window.onload = function () {
   document.addEventListener(

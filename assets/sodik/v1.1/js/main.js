@@ -154,8 +154,7 @@ sodik_audioPlayer = () => {
     '<audio controls autoplay loop><source src="' +
     urlPages +
     'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
-  suh +=
-    '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ic0qI283GwA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="display:none;"></iframe>';
+  suh += "";
   $(".jancuk.pristel.nih.boss").append(suh);
 };
 sodik_valPageBrowser = () => {

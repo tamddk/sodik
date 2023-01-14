@@ -131,10 +131,6 @@ var sodik_portfolio = () => {
   spf +=
     '<li><a href="https://www.linkedin.com/in/sodikun/" target="_blank">/// Linkedin</a></li>';
   spf += "</ul>";
-  spf += "<ul>";
-  spf +=
-    '<li>|<a href="https://drive.google.com/file/d/1L2A01Y6KDnfZXKT3qJc0DKdFDRz5hb23/view?usp=sharing" target="_blank"> Download My Resume</a>|</li>';
-  spf += "</ul>";
   spf += "</div>";
   spf += "</div>";
   spf += "</section>";

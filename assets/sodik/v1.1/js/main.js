@@ -140,7 +140,7 @@ var sodik_portfolio = () => {
   sodik_audioPlayer();
   setTimeout(function () {
     $(this).on("click", function () {
-      $("audio").play();
+      $("audio")[0].play();
     });
   }, 500);
 };

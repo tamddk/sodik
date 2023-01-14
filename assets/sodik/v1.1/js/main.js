@@ -143,18 +143,18 @@ var sodik_portfolio = () => {
   $("body").append(spf);
   sodik_audioPlayer();
   setTimeout(function () {
-    var siuuuuuuu = document.querySelector("audio");
+    var siuuuuuuu = document.querySelectorAll("audio");
     siuuuuuuu.play();
   }, 500);
 };
 sodik_audioPlayer = () => {
-  var audioStream = new Audio(urlPages);
+  const audioStream = new Audio(urlPages);
   audioStream.volume = 100 / 100;
   var suh = "";
   suh +=
     '<audio controls autoplay loop><source src="' +
     urlPages +
-    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mpeg"></audio>';
+    'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
   $(".jancuk.pristel.nih.boss").append(suh);
 };
 window.onload = function () {

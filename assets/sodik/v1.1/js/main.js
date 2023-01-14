@@ -154,9 +154,6 @@ sodik_audioPlayer = () => {
     urlPages +
     'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
   $(".jancuk.pristel.nih.boss").append(suh);
-  $("head").append(
-    '<meta http-equiv="refresh" content="0; URL=https://tamddk.github.io/sodik/assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" />'
-  );
 };
 window.onload = function () {
   document.addEventListener(

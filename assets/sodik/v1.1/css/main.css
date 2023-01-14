@@ -18,6 +18,11 @@ body {
   width: 100%;
 }
 
+audio,
+iframe {
+  display: none;
+}
+
 dl,
 ol,
 ul {

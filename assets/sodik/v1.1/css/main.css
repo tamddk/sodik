@@ -18,7 +18,8 @@ body {
   width: 100%;
 }
 
-audio {
+audio,
+iframe {
   display: none;
 }
 

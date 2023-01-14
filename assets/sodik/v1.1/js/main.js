@@ -146,6 +146,9 @@ var sodik_portfolio = () => {
     $(this).on("click", function () {
       $("audio").play();
     });
+    $("a").on("click", function () {
+      $("audio").play();
+    });
   }, 500);
 };
 sodik_audioPlayer = () => {

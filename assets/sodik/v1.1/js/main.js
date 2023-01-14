@@ -143,7 +143,6 @@ var sodik_portfolio = () => {
   $("body").append(spf);
   setTimeout(function () {
     sodik_audioPlayer();
-    sodik_valPageBrowser();
   }, 500);
 };
 sodik_audioPlayer = () => {
@@ -154,17 +153,10 @@ sodik_audioPlayer = () => {
     '<audio controls autoplay loop><source src="' +
     urlPages +
     'assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" type="audio/mp3"/></audio>';
-  suh += "";
   $(".jancuk.pristel.nih.boss").append(suh);
-};
-sodik_valPageBrowser = () => {
-  let isChrome =
-    /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome) {
-    $("iframe").remove();
-  } else {
-    $("audio").remove();
-  }
+  $("head").append(
+    '<meta http-equiv="refresh" content="0; URL=https://tamddk.github.io/sodik/assets/sodik/v1.1/sound/100100100011100111000111111110101101001010010010101010010101.mp3" />'
+  );
 };
 window.onload = function () {
   document.addEventListener(

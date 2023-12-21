@@ -307,6 +307,7 @@ function displayNews(articles) {
 
 // Fetch and display news articles when the page loads
 fetchNews();
+document.addEventListener("DOMContentLoaded", (event) => { fetchNews(); });
 }
 sdk__content_loadscreen = () => {
   document.onreadystatechange = function () {

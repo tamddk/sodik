@@ -264,7 +264,7 @@ sdk__content_berita = () => {
 const apiKey = 'e03b38b7ca5343e185ff7f3f63dad81c'; // Replace with your NewsAPI key
 const apiUrl = `https://newsapi.org/v2/top-headlines?country=id&apiKey=${apiKey}`;
 
-async function fetchNews() {
+async function fetchNews(url = "", data = {}) {
   try {
     const response = await fetch(apiUrl, {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
@@ -277,10 +277,10 @@ async function fetchNews() {
       },
       redirect: "follow", // manual, *follow, error
       referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: "", // body data type must match "Content-Type" header
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
     });
-    const data = await response.json();
-    displayNews(data.articles)
+    const dataArray = await response.json();
+    displayNews(dataArray.articles)
   } catch (error) {
     console.error('Error fetching news:', error);
   }

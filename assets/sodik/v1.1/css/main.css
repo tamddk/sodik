@@ -343,7 +343,6 @@ a {
 }
 .gFrak {
   background-color: rgb(13, 127, 181);
-  height: 170px;
   padding: 26px 16px 0;
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -467,6 +466,7 @@ a {
   border-bottom: 2px solid #000;
 }
 .modal-images {
+  background-size:cover;
   border-radius: 10px;
 }
 @keyframes zoomIn {
@@ -578,7 +578,7 @@ a {
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 .newsContainer {
   height: 300px;

@@ -16,7 +16,7 @@ sdk__tabs = () => {
   
       // Activate the clicked tab link and show the corresponding content
       link.classList.add('active');
-      
+
       if(tabId === "86182742") {
         sdk__content_default();
       } else if(tabId === "86457829"){
@@ -244,14 +244,28 @@ sdk__content_p1 = () => {
 }
 sdk__content_p2 = () => {
   var HTML = `
-  <div class="evVpTa">
-    <div class="MenuStyled__Menu-tfdk7q-1 ksccCe">
-      <div class="MenuStyled__MenuItemButton-tfdk7q-3 hmxIoX">
-        <button class="eEzGYE">
-          <div class="jyhKVg" style="font-size: 16px; padding: 13px 0px; justify-content: start;">Bantuan</div>
-          <div color="#000" class="cZKzfj"></div>
-        </button>
-        <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"></span>
+  <div class="dWnBKs">
+    <div class="iOtxNW">
+      <p class="cKStbe">Berkas Saya</p>
+    </div>
+    <div class="evVpTa">
+      <div class="ksccCe">
+        <div class="hmxIoX">
+          <a href="">
+            <button class="aAzGYa eEzGYE">
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path d="M11.363 2c4.155 0 2.637 6 2.637 6s6-1.65 6 2.457v11.543h-16v-20h7.363zm.826-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z"/></svg>
+              <div class="jyhKVg" style="font-size: 16px; padding: 13px 0px; justify-content: start;">Download CV (Curriculum Vitae)</div>
+            </button>
+          </a>
+        </div>
+        <div class="hmxIoX">
+          <a href="">
+            <button class="aAzGYa eEzGYE">
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path d="M11.363 2c4.155 0 2.637 6 2.637 6s6-1.65 6 2.457v11.543h-16v-20h7.363zm.826-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.658.587-2.034-.062-2.692-.298-.3-.712-.459-1.2-.459zm-.692.783h.496c.473 0 .802.173.915.644.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12zm-2.74-.783h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.095-.291.095-.597 0-.885-.16-.484-.606-.761-1.224-.761zm-.761.732h.546c.235 0 .467.028.576.228.067.123.067.366 0 .489-.109.199-.341.227-.576.227h-.546v-.944z"/></svg>
+              <div class="jyhKVg" style="font-size: 16px; padding: 13px 0px; justify-content: start;">Download Resume</div>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -318,7 +332,7 @@ function displayNews(articles) {
 }
 
 // Fetch and display news articles when the page loads
-document.addEventListener("DOMContentLoaded", fetchNews);
+fetchNews();
 }
 sdk__content_loadscreen = () => {
   document.onreadystatechange = function () {

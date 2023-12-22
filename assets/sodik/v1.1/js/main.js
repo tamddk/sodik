@@ -278,13 +278,20 @@ sdk__content_berita = () => {
   const apiKey = 'e03b38b7ca5343e185ff7f3f63dad81c'; // Replace with your NewsAPI key
   const apiUrl = `https://newsapi.org/v2/top-headlines?country=id&apiKey=${apiKey}`;
 
-  fetch(apiUrl).then(response => response.json())
-  .then(data => {
-    displayNews(data.articles);
-  })
-  .catch(error => {
-    console.error('Error fetching news:', error);
-  });
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== 4) return;
+    if (xhr.status >= 200 && xhr.status < 300) {
+      console.log()
+      const dataArr = JSON.parse(xhr.response);
+      displayNews(dataArr.articles);
+    } else {
+      console.log('The request failed!');
+    }
+    console.log('This always runs...');
+  };
+  xhr.open('GET', apiUrl);
+  xhr.send();
 
   function displayNews(articles) {
     const newsContainer = document.querySelector('.newsContainer');

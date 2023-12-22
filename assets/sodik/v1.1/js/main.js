@@ -275,20 +275,17 @@ sdk__content_p2 = () => {
 }
 sdk__content_berita = () => {
   // Fetch news articles using NewsAPI
-  const apiKey = 'e03b38b7ca5343e185ff7f3f63dad81c'; // Replace with your NewsAPI key
-  const apiUrl = `https://newsapi.org/v2/top-headlines?country=id&apiKey=${apiKey}`;
+  const apiUrl = 'https://saurav.tech/NewsAPI/everything/cnn.json';
 
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function () {
     if (xhr.readyState !== 4) return;
     if (xhr.status >= 200 && xhr.status < 300) {
-      console.log()
       const dataArr = JSON.parse(xhr.response);
       displayNews(dataArr.articles);
     } else {
       console.log('The request failed!');
     }
-    console.log('This always runs...');
   };
   xhr.open('GET', apiUrl);
   xhr.send();

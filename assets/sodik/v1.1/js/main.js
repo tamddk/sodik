@@ -194,7 +194,6 @@ sdk__content_p1 = () => {
         <img alt="icon home" src="assets/sodik/v1.1/images/owner/IMG_20231214_022957.jpg" decoding="async" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
       </span>
     </div>
-    <a href="https://www.instagram.com/tbhmdsdk"><span style="padding: 5px; font-size: 14px; font-weight: 600; color: #fff;">@tbhmdsdk</span></a>
   </div>
   <div class="jpsKOb">
     <h1 class="dWBcVa dDdYaP" color="neutral">Tubagus Ahmad Sodik, S.Kom</h1>

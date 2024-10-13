@@ -132,11 +132,11 @@ sdk__content_track_device = () => {
       return 'Linux';
     } else if (platform.startsWith('Android')) {
       return 'Android';
-    } else if (platform.startsWith('Iphone')) {
+    } else if (platform.startsWith('iphone')) {
       return 'Iphone';
-    } else if (platform.startsWith('Ipad')) {
+    } else if (platform.startsWith('ipad')) {
       return 'Ipad';
-    } else if (platform.startsWith('Ipod')) {
+    } else if (platform.startsWith('ipod')) {
       return 'Ipod';
     } else {
       return 'Other';

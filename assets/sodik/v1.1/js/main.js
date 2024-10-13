@@ -124,14 +124,20 @@ sdk__content_track_device = () => {
   function getOS(userAgent) {
     const platform = navigator.platform;
     const mobilePlatforms = ['iPhone', 'iPad', 'iPod', 'Android'];
-    if (mobilePlatforms.some(platform => userAgent.includes(platform))) {
-      return 'Mobile';
-    } else if (platform.startsWith('Mac')) {
+    if (platform.startsWith('Mac')) {
       return 'Mac OS';
     } else if (platform.startsWith('Win')) {
       return 'Windows';
     } else if (platform.startsWith('Linux')) {
       return 'Linux';
+    } else if (platform.startsWith('Android')) {
+      return 'Android';
+    } else if (platform.startsWith('Iphone')) {
+      return 'Iphone';
+    } else if (platform.startsWith('Ipad')) {
+      return 'Ipad';
+    } else if (platform.startsWith('Ipod')) {
+      return 'Ipod';
     } else {
       return 'Other';
     }
@@ -219,6 +225,9 @@ sdk__content_p1 = () => {
 sdk__content_p2 = () => {
   var HTML = `
   <div class="dWnBKs">
+    <div class="iOtxNW">
+      <p class="cKStbe">Social Media</p>
+    </div>  
     <div class="iOtxNW">
       <p class="cKStbe">Berkas Saya</p>
     </div>

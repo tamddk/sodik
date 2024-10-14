@@ -266,7 +266,7 @@ sdk__content_p2 = () => {
       </div>
     </div>
     <div class="iOtxNW">
-      <p class="cKStbe">List Project Pribadi</p>
+      <p class="cKStbe">List Project Client</p>
     </div>
     <div class="evVpTa">
       <div class="ksccCe">
@@ -298,6 +298,19 @@ sdk__content_p2 = () => {
           <a href="https://tikitagroups.vercel.app/" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Tikita Coffee</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="iOtxNW">
+      <p class="cKStbe">List Project Pribadi</p>
+    </div>    
+    <div class="evVpTa">
+      <div class="ksccCe">
+        <div class="hmxIoX">
+          <a href="https://www.tugasodik.my.id" class="aAzGYa eEzGYE">
+            <i class="fab fa-link" aria-hidden="true"></i>
+            <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Website Aku Pribadi</div>
           </a>
         </div>
       </div>

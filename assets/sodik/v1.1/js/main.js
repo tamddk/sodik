@@ -271,25 +271,25 @@ sdk__content_p2 = () => {
     <div class="evVpTa">
       <div class="ksccCe">
         <div class="hmxIoX">
-          <a href="https://www.shaitamacoffee.com" class="aAzGYa eEzGYE">
+          <a href="https://shaitamacoffee.com" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Shaitama Coffee</div>
           </a>
         </div>
         <div class="hmxIoX">
-          <a href="https://www.toko.shaitamacoffee.com" class="aAzGYa eEzGYE">
+          <a href="https://toko.shaitamacoffee.com" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Toko Shaitama Coffee</div>
           </a>
         </div>
         <div class="hmxIoX">
-          <a href="https://www.roastery.shaitamacoffee.com" class="aAzGYa eEzGYE">
+          <a href="https://roastery.shaitamacoffee.com" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Roastery Shaitama Coffee</div>
           </a>
         </div>
         <div class="hmxIoX">
-          <a href="https://www.hpanel.shaitamacoffee.com" class="aAzGYa eEzGYE">
+          <a href="https://hpanel.shaitamacoffee.com" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Hpanel Shaitama Coffee</div>
           </a>
@@ -308,7 +308,7 @@ sdk__content_p2 = () => {
     <div class="evVpTa">
       <div class="ksccCe">
         <div class="hmxIoX">
-          <a href="https://www.tugasodik.my.id" class="aAzGYa eEzGYE">
+          <a href="https://tugasodik.my.id" class="aAzGYa eEzGYE">
             <i class="fab fa-link" aria-hidden="true"></i>
             <div class="jyhKVg" style="font-size: 16px; padding: 1px 5px 1px; justify-content: start;">Website Aku Pribadi</div>
           </a>
